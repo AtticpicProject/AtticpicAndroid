@@ -1,7 +1,7 @@
 import org.gradle.api.JavaVersion
 
 object AppConfig {
-    const val name = "Atticpic"
+//    const val name = "Atticpic"
     const val applicationId = "com.atticpic.myapplication"
     const val minSdk = 23
     const val completeSdk = 31

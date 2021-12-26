@@ -1,5 +1,5 @@
 plugins {
-    id("com.android.application")
+    id ("com.android.library")
     kotlin("android")
 }
 
@@ -7,13 +7,13 @@ android {
     compileSdk = AppConfig.completeSdk
 
     defaultConfig {
-        applicationId = AppConfig.applicationId
         minSdk = AppConfig.minSdk
         targetSdk = AppConfig.targetSdk
-        versionCode = Releases.versionCode
-        versionName = Releases.versionName
+//        versionCode = Releases.versionCode
+//        versionName = Releases.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles.add(File("consumer-rules.pro"))
     }
 
     buildTypes {
@@ -36,16 +36,10 @@ android {
 
 dependencies {
 
-    implementation(project(Modules.data))
-    implementation(project(Modules.domain))
-
-    implementation(Dependencies.Design.appCompat)
-    implementation(Dependencies.Design.material)
-    implementation(Dependencies.Design.constraintLayout)
-
-    implementation(Dependencies.Kotlin.core)
-
-    testImplementation(Dependencies.Test.junit)
-    androidTestImplementation(Dependencies.Test.junitExt)
-    androidTestImplementation(Dependencies.Test.espresso)
+    implementation (Dependencies.Kotlin.core)
+    implementation (Dependencies.Design.appCompat)
+    implementation (Dependencies.Design.material)
+    testImplementation (Dependencies.Test.junit)
+    androidTestImplementation (Dependencies.Test.junitExt)
+    androidTestImplementation (Dependencies.Test.espresso)
 }

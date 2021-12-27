@@ -1,6 +1,8 @@
 object Dependencies {
     object Kotlin {
         const val core = "androidx.core:core-ktx:${Versions.core}"
+        const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
+        const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.kotlinCoroutines}"
     }
 
     object Design {

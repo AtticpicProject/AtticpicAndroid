@@ -21,7 +21,7 @@ object Dependencies {
 
     object Dagger {
         const val dagger = "com.google.dagger:hilt-android:${Versions.dagger}"
-        const val daggerCompiler = "com.google.dagger:hilt-compiler:${Versions.dagger}"
+        const val daggerCompiler = "com.google.dagger:hilt-android-compiler:${Versions.dagger}"
     }
 
     object Retrofit {

@@ -27,13 +27,16 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = AppConfig.javaVersion
         targetCompatibility = AppConfig.javaVersion
     }
+
     kotlinOptions {
         jvmTarget = AppConfig.jvmTarget
     }
+
     buildFeatures {
         viewBinding = true
     }
@@ -52,7 +55,7 @@ dependencies {
     implementation(Dependencies.Kotlin.coroutines)
 
     implementation(Dependencies.Dagger.dagger)
-    implementation(Dependencies.Dagger.daggerCompiler)
+    kapt(Dependencies.Dagger.daggerCompiler)
 
     implementation(Dependencies.Retrofit.retrofit)
     implementation(Dependencies.Retrofit.retrofitConverterMoshi)
@@ -64,4 +67,8 @@ dependencies {
     testImplementation(Dependencies.Test.junit)
     androidTestImplementation(Dependencies.Test.junitExt)
     androidTestImplementation(Dependencies.Test.espresso)
+}
+
+kapt {
+    correctErrorTypes = true
 }

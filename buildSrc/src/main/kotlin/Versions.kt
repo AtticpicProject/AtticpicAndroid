@@ -8,7 +8,7 @@ object Versions {
     const val material = "1.4.0"
     const val constraintLayout = "2.1.2"
 
-    const val dagger = "2.38.1"
+    const val dagger = "2.40.5"
 
     const val retrofit = "2.9.0"
     const val loggingInterceptor = "4.9.1"

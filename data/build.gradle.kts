@@ -23,20 +23,22 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = AppConfig.javaVersion
         targetCompatibility = AppConfig.javaVersion
     }
+
     kotlinOptions {
         jvmTarget = AppConfig.jvmTarget
     }
 }
 
 dependencies {
-
     implementation(Dependencies.Kotlin.core)
     implementation(Dependencies.Design.appCompat)
     implementation(Dependencies.Design.material)
+
     testImplementation(Dependencies.Test.junit)
     androidTestImplementation(Dependencies.Test.junitExt)
     androidTestImplementation(Dependencies.Test.espresso)

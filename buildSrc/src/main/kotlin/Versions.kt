@@ -16,6 +16,8 @@ object Versions {
 
     const val moshi = "1.11.0"
 
+    const val navigation = "2.3.5"
+
     const val junit = "4.13.2"
     const val junitExt = "1.1.3"
     const val espresso = "3.4.0"

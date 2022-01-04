@@ -13,7 +13,6 @@ import javax.inject.Singleton
 object ResourceModule {
     @Singleton
     @Provides
-    fun provideApplicationContext(application: Application): Context {
-        return application.applicationContext
-    }
+    fun provideApplicationContext(application: Application): Context =
+        application.applicationContext
 }

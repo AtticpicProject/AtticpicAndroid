@@ -3,6 +3,7 @@ plugins {
     kotlin("android")
     kotlin("kapt")
     id("dagger.hilt.android.plugin")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -63,6 +64,9 @@ dependencies {
 
     implementation(Dependencies.Moshi.moshi)
     kapt(Dependencies.Moshi.moshiCodegen)
+
+    implementation(Dependencies.NavigationComponent.navigationFragment)
+    implementation(Dependencies.NavigationComponent.navigationUi)
 
     testImplementation(Dependencies.Test.junit)
     androidTestImplementation(Dependencies.Test.junitExt)

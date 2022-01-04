@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     kotlin("android")
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -25,20 +27,22 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = AppConfig.javaVersion
         targetCompatibility = AppConfig.javaVersion
     }
+
     kotlinOptions {
         jvmTarget = AppConfig.jvmTarget
     }
+
     buildFeatures {
         viewBinding = true
     }
 }
 
 dependencies {
-
     implementation(project(Modules.data))
     implementation(project(Modules.domain))
 
@@ -50,7 +54,21 @@ dependencies {
     implementation(Dependencies.Kotlin.stdlib)
     implementation(Dependencies.Kotlin.coroutines)
 
+    implementation(Dependencies.Dagger.dagger)
+    kapt(Dependencies.Dagger.daggerCompiler)
+
+    implementation(Dependencies.Retrofit.retrofit)
+    implementation(Dependencies.Retrofit.retrofitConverterMoshi)
+    implementation(Dependencies.Retrofit.okhttpLoggingInterceptor)
+
+    implementation(Dependencies.Moshi.moshi)
+    kapt(Dependencies.Moshi.moshiCodegen)
+
     testImplementation(Dependencies.Test.junit)
     androidTestImplementation(Dependencies.Test.junitExt)
     androidTestImplementation(Dependencies.Test.espresso)
+}
+
+kapt {
+    correctErrorTypes = true
 }

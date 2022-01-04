@@ -1,5 +1,5 @@
 plugins {
-    id ("com.android.library")
+    id("com.android.library")
     kotlin("android")
 }
 
@@ -34,10 +34,10 @@ android {
 
 dependencies {
 
-    implementation (Dependencies.Kotlin.core)
-    implementation (Dependencies.Design.appCompat)
-    implementation (Dependencies.Design.material)
-    testImplementation (Dependencies.Test.junit)
-    androidTestImplementation (Dependencies.Test.junitExt)
-    androidTestImplementation (Dependencies.Test.espresso)
+    implementation(Dependencies.Kotlin.core)
+    implementation(Dependencies.Design.appCompat)
+    implementation(Dependencies.Design.material)
+    testImplementation(Dependencies.Test.junit)
+    androidTestImplementation(Dependencies.Test.junitExt)
+    androidTestImplementation(Dependencies.Test.espresso)
 }

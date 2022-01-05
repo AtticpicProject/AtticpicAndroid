@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Atticpic</string>
+    <string name="login_header_text">Зарегистрируйтесь и получите доступ к:</string>
+    <string name="text_login_create_collection">Созданию своей коллекции</string>
+    <string name="text_login_feedback">Обратной связи</string>
+    <string name="lost_password">Забыл пароль</string>
+    <string name="login">Войти</string>
+    <string name="login_police">Регистрируясь, вы соглашаетесь \nс нашей политикой</string>
+    <string name="password">Пароль</string>
+    <string name="email">Email</string>
+    <string name="registration">Зарегестрируйтесь</string>
+    <string name="first_login">Первый раз?</string>
 </resources>

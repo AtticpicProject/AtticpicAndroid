@@ -7,7 +7,12 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.atticpic.myapplication.presentation.login.LoginFragment"
+        android:name="com.atticpic.myapplication.presentation.screen.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.atticpic.myapplication.presentation.screen.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
 </navigation>

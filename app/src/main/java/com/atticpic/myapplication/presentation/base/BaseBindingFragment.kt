@@ -1,4 +1,4 @@
-package com.atticpic.myapplication.presentation
+package com.atticpic.myapplication.presentation.base
 
 import android.os.Bundle
 import android.view.LayoutInflater

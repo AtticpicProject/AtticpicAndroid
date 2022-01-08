@@ -2,11 +2,10 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/RootLayoutStyle">
+    style="@style/RootLayoutStyle"
+    tools:context=".presentation.screen.login.LoginFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        style="@style/RootLayoutStyle.Entrance"
-        tools:context=".presentation.login.LoginFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/RootLayoutStyle.Entrance">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/image_app_logo"

@@ -3,5 +3,41 @@
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowBackground">@color/sapphire_black</item>
         <item name="android:windowFullscreen">true</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="HeaderTextStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/smoky_white</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="AppTextStyle">
+        <item name="android:textColor">@color/silver</item>
+    </style>
+
+    <style name="AppTextStyle.Body1">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="AppTextStyle.Body2">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTextStyle.Caption">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppButton" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:background">@drawable/button_main</item>
+        <item name="android:textColor">@color/sapphire_black</item>
+    </style>
+
+    <style name="AppEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edittext_main</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:textColor">@color/smoky_white</item>
+        <item name="android:textColorHint">@color/marengo</item>
     </style>
 </resources>

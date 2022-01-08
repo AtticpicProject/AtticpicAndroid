@@ -3,11 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.atticpic.myapplication.MainFragment"
         android:label="MainFragment"
         tools:layout="@layout/fragment_main"/>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.atticpic.myapplication.presentation.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
 </navigation>

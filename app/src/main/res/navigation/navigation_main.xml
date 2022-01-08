@@ -6,11 +6,6 @@
     app:startDestination="@id/loginFragment">
 
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.atticpic.myapplication.MainFragment"
-        android:label="MainFragment"
-        tools:layout="@layout/fragment_main" />
-    <fragment
         android:id="@+id/loginFragment"
         android:name="com.atticpic.myapplication.presentation.login.LoginFragment"
         android:label="fragment_login"

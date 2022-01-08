@@ -5,6 +5,7 @@
         <item name="android:windowBackground">@color/sapphire_black</item>
         <item name="android:windowFullscreen">true</item>
         <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="colorAccent">@color/marengo</item>
     </style>
 
     <style name="HeaderTextStyle">
@@ -12,34 +13,49 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/smoky_white</item>
         <item name="android:textAlignment">center</item>
+        <item name="font">@font/montserrat_semi_bold</item>
     </style>
 
     <style name="AppTextStyle">
         <item name="android:textColor">@color/silver</item>
     </style>
 
-    <style name="AppTextStyle.Body1">
+    <style name="AppTextStyle.Medium">
         <item name="android:textSize">13sp</item>
     </style>
 
-    <style name="AppTextStyle.Body2">
+    <style name="AppTextStyle.Big">
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="AppTextStyle.Caption">
+    <style name="AppTextStyle.Small">
         <item name="android:textSize">12sp</item>
     </style>
 
     <style name="AppButton" parent="TextAppearance.MaterialComponents.Button">
-        <item name="android:background">@drawable/button_main</item>
+        <item name="android:background">@drawable/selector_yellow_button_main</item>
         <item name="android:textColor">@color/sapphire_black</item>
     </style>
 
-    <style name="AppEditText" parent="Widget.AppCompat.EditText">
-        <item name="android:background">@drawable/edittext_main</item>
+    <style name="InputFieldsStyle.AppEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/bg_input_main</item>
         <item name="android:paddingStart">16dp</item>
         <item name="android:textColor">@color/smoky_white</item>
         <item name="android:textColorHint">@color/marengo</item>
-        <item name="android:textCursorDrawable">@drawable/edittext_cursor</item>
+        <item name="android:textCursorDrawable">@drawable/bg_input_cursor</item>
+    </style>
+
+    <style name="RootLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="RootLayoutStyle.Entrance">
+        <item name="android:padding">40dp</item>
+    </style>
+
+    <style name="InputFieldsStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
     </style>
 </resources>

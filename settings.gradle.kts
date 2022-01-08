@@ -8,6 +8,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Atticpic"
-include (":app")
-include (":data")
-include (":domain")
+include(":app")
+include(":data")
+include(":domain")

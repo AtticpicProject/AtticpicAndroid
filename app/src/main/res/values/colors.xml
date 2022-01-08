@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="immature_yellow">#FAFC6C</color>
+    <color name="immature_yellow_50">#80FAFC6C</color>
     <color name="sapphire_black">#16202A</color>
     <color name="sapphire_blue">#222B35</color>
     <color name="smoky_white">#F6F6F6</color>

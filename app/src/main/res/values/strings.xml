@@ -9,5 +9,5 @@
     <string name="password">Пароль</string>
     <string name="email">Email</string>
     <string name="registration">Зарегестрируйтесь</string>
-    <string name="first_login">Первый раз?</string>
+    <string name="first_time">Первый раз?</string>
 </resources>

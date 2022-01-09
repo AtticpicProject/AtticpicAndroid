@@ -1,4 +1,4 @@
-package com.atticpic.myapplication.presentation.login
+package com.atticpic.myapplication.presentation.screen.login
 
 import android.os.Bundle
 import android.view.View
@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.atticpic.myapplication.databinding.FragmentLoginBinding
-import com.atticpic.myapplication.presentation.BaseBindingFragment
+import com.atticpic.myapplication.presentation.base.BaseBindingFragment
 import com.atticpic.myapplication.presentation.model.AppState
 import dagger.hilt.android.AndroidEntryPoint
 

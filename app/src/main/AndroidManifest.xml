@@ -3,7 +3,6 @@
     package="com.atticpic.myapplication">
 
     <application
-        android:name=".App"
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"

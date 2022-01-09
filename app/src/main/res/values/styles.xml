@@ -37,6 +37,11 @@
         <item name="android:textColor">@color/sapphire_black</item>
     </style>
 
+    <style name="OnboardingButton" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:background">@drawable/bg_onboarding_button</item>
+        <item name="android:textColor">@color/smoky_white</item>
+    </style>
+
     <style name="InputFieldsStyle.AppEditText" parent="Widget.AppCompat.EditText">
         <item name="android:background">@drawable/bg_input_main</item>
         <item name="android:paddingStart">16dp</item>

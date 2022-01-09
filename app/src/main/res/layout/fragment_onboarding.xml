@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RootLayoutStyle"
+    android:orientation="vertical"
+    tools:context=".presentation.screen.onboarding.OnboardingFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="257dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_onboarding_header" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-30dp"
+        app:srcCompat="@drawable/ic_onboarding_logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/HeaderTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_onboarding_big_header" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|top"
+        android:paddingTop="16dp"
+        android:text="@string/text_onboarding_small_header"
+        android:textColor="@color/white_50"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/OnboardingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="40dp"
+        android:drawableEnd="@drawable/ic_star"
+        android:gravity="center"
+        android:paddingHorizontal="40dp"
+        android:text="@string/title_onboarding_button"
+        android:textSize="12sp" />
+</LinearLayout>

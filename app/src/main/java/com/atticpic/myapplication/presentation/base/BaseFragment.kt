@@ -12,11 +12,9 @@ private typealias Inflater<B> = (LayoutInflater, ViewGroup?, Boolean) -> B
 
 private const val ERROR_INFLATE_BINDING = "Binding is not inflate"
 
-abstract class BaseBindingFragment<VM : ViewModel, B : ViewBinding>(
+abstract class BaseBindingFragment<B : ViewBinding>(
     private val bindingInflater: Inflater<B>
 ) : Fragment() {
-
-    protected abstract val fragmentViewModel: VM
 
     private var _binding: B? = null
     protected val binding: B
@@ -35,4 +33,11 @@ abstract class BaseBindingFragment<VM : ViewModel, B : ViewBinding>(
         _binding = null
         super.onDestroyView()
     }
+}
+
+abstract class BaseViewModelBindingFragment<VM : ViewModel, B : ViewBinding>(
+    bindingInflater: Inflater<B>
+) : BaseBindingFragment<B>(bindingInflater) {
+
+    protected abstract val fragmentViewModel: VM
 }

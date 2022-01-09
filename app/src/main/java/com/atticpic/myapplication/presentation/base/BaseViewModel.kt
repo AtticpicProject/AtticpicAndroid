@@ -1,7 +1,6 @@
 package com.atticpic.myapplication.presentation.base
 
 import androidx.lifecycle.ViewModel
-import com.atticpic.myapplication.presentation.model.AppState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

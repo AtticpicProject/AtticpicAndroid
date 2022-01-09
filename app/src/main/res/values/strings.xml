@@ -1,13 +1,21 @@
 <resources>
+    <!-- Common strings -->
     <string name="app_name">Atticpic</string>
-    <string name="login_header_text">Зарегистрируйтесь и получите доступ к:</string>
+
+    <!-- Fragment login -->
+    <string name="text_login_header">Зарегистрируйтесь и получите доступ к:</string>
     <string name="text_login_create_collection">Созданию своей коллекции</string>
     <string name="text_login_feedback">Обратной связи</string>
-    <string name="lost_password">Забыл пароль</string>
-    <string name="login">Войти</string>
-    <string name="login_police">Регистрируясь, вы соглашаетесь \nс нашей политикой</string>
-    <string name="password">Пароль</string>
-    <string name="email">Email</string>
-    <string name="registration">Зарегестрируйтесь</string>
-    <string name="first_time">Первый раз?</string>
+    <string name="text_lost_password"><u>Забыл пароль</u></string>
+    <string name="text_login_police">Регистрируясь, вы соглашаетесь \nс нашей <a href="http://www.google.com">политикой</a></string>
+    <string name="text_first_time">Первый раз?</string>
+    <string name="title_enter">Войти</string>
+    <string name="title_registration">Зарегестрируйтесь</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_email">Email</string>
+
+    <!-- Fragment onboarding -->
+    <string name="text_onboarding_big_header">Творчество рядом</string>
+    <string name="text_onboarding_small_header">Найди своё вдохновение</string>
+    <string name="title_onboarding_button">Найти вдохновение</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.atticpic.myapplication.presentation
+package com.atticpic.myapplication.presentation.base
 
 import androidx.lifecycle.ViewModel
 import com.atticpic.myapplication.presentation.model.AppState

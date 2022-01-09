@@ -65,6 +65,7 @@ dependencies {
     implementation(Dependencies.Moshi.moshi)
     kapt(Dependencies.Moshi.moshiCodegen)
 
+    implementation(Dependencies.NavigationComponent.navigationRuntime)
     implementation(Dependencies.NavigationComponent.navigationFragment)
     implementation(Dependencies.NavigationComponent.navigationUi)
 

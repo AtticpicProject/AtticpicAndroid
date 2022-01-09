@@ -1,7 +1,6 @@
 package com.atticpic.myapplication.presentation.base
 
 import androidx.lifecycle.ViewModel
-import com.atticpic.myapplication.presentation.model.AppState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -11,15 +10,15 @@ abstract class BaseViewModel<D : Any, E : Any> : ViewModel() {
     val uiState: StateFlow<AppState<D, E>> =
         _uiState.asStateFlow()
 
-    fun setLoading(progress: Float? = null) {
+    open fun setLoading(progress: Float? = null) {
         _uiState.tryEmit(AppState.Loading(progress))
     }
 
-    fun setSuccessful(data: D) {
+    open fun setSuccessful(data: D) {
         _uiState.tryEmit(AppState.Success(data))
     }
 
-    fun setError(error: E) {
+    open fun setError(error: E) {
         _uiState.tryEmit(AppState.Error(error))
     }
 }

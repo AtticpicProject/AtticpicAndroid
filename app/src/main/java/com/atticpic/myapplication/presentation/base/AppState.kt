@@ -1,4 +1,4 @@
-package com.atticpic.myapplication.presentation.model
+package com.atticpic.myapplication.presentation.base
 
 sealed class AppState<out D, out E> {
     object Init : AppState<Nothing, Nothing>()

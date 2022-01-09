@@ -9,7 +9,11 @@
         android:id="@+id/loginFragment"
         android:name="com.atticpic.myapplication.presentation.screen.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login">
+        <argument
+            android:name="userName"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.atticpic.myapplication.presentation.screen.splash.SplashFragment"
@@ -19,5 +23,9 @@
         android:id="@+id/onboardingFragment"
         android:name="com.atticpic.myapplication.presentation.screen.onboarding.OnboardingFragment"
         android:label="fragment_onboarding"
-        tools:layout="@layout/fragment_onboarding" />
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/action_onboardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>

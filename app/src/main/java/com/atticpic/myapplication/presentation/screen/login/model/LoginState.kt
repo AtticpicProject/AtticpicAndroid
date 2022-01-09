@@ -2,5 +2,6 @@ package com.atticpic.myapplication.presentation.screen.login.model
 
 data class LoginState(
     val email: String,
-    val password: String
+    val password: String,
+    val token: String = ""
 )

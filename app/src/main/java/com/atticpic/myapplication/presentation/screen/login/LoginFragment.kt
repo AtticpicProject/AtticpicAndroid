@@ -6,13 +6,13 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.atticpic.myapplication.databinding.FragmentLoginBinding
-import com.atticpic.myapplication.presentation.base.BaseBindingFragment
-import com.atticpic.myapplication.presentation.model.AppState
+import com.atticpic.myapplication.presentation.base.AppState
+import com.atticpic.myapplication.presentation.base.BaseViewModelBindingFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class LoginFragment :
-    BaseBindingFragment<LoginViewModel, FragmentLoginBinding>(FragmentLoginBinding::inflate) {
+    BaseViewModelBindingFragment<LoginViewModel, FragmentLoginBinding>(FragmentLoginBinding::inflate) {
 
     override val fragmentViewModel: LoginViewModel by viewModels()
 

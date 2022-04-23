@@ -9,7 +9,7 @@
     </style>
 
     <style name="HeaderTextStyle">
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">@dimen/text_size_big</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/smoky_white</item>
         <item name="android:textAlignment">center</item>
@@ -29,7 +29,7 @@
     </style>
 
     <style name="AppTextStyle.Small">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
     </style>
 
     <style name="AppButton" parent="TextAppearance.MaterialComponents.Button">
@@ -38,7 +38,7 @@
     </style>
 
     <style name="OnboardingButton" parent="TextAppearance.MaterialComponents.Button">
-        <item name="android:background">@drawable/bg_onboarding_button</item>
+        <item name="android:background">@drawable/selector_onboarding_button</item>
         <item name="android:textColor">@color/smoky_white</item>
     </style>
 
@@ -56,11 +56,11 @@
     </style>
 
     <style name="RootLayoutStyle.Entrance">
-        <item name="android:padding">40dp</item>
+        <item name="android:padding">@dimen/padding_2x</item>
     </style>
 
     <style name="InputFieldsStyle">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_height">@dimen/input_height_standard</item>
     </style>
 </resources>

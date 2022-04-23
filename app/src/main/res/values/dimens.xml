@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="corner_radius_standard">14dp</dimen>
+    <dimen name="drawable_padding_standard">8dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_standard">20dp</dimen>
+    <dimen name="margin_2x">40dp</dimen>
+    <dimen name="margin_3x">60dp</dimen>
+    <dimen name="margin_4x">80dp</dimen>
+    <dimen name="margin_5x">100dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_standard">20dp</dimen>
+    <dimen name="padding_2x">40dp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_big">24sp</dimen>
+    <dimen name="input_height_standard">56dp</dimen>
+</resources>

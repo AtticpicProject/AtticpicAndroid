@@ -30,10 +30,10 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center|top"
-        android:paddingTop="16dp"
+        android:paddingTop="@dimen/padding_standard"
         android:text="@string/text_onboarding_small_header"
         android:textColor="@color/white_50"
-        android:textSize="16sp" />
+        android:textSize="@dimen/text_size_medium" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_onboarding"
@@ -41,10 +41,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|bottom"
-        android:layout_margin="40dp"
+        android:layout_margin="@dimen/margin_2x"
         android:drawableEnd="@drawable/ic_star"
         android:gravity="center"
-        android:paddingHorizontal="40dp"
+        android:paddingHorizontal="@dimen/padding_2x"
         android:text="@string/title_onboarding_button"
-        android:textSize="12sp" />
+        android:textSize="@dimen/text_size_small" />
 </LinearLayout>
